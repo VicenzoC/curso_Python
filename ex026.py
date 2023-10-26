@@ -1,0 +1,6 @@
+fr = str(input('Digite uma frase: '))
+frase = fr.upper()
+la = frase.count('A')
+oa = frase.find('A')
+ra = frase.rfind('A')
+print("Tem quantos 'A's na sua frase? {}\nOnde o primeiro 'A' aparece? {}\nOnde o último 'A' aparece? {}".format(la, oa, ra))
