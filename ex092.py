@@ -10,6 +10,7 @@ if info['cpts'] != '0':
     info['contrato'] = int(input('Ano de contratação: '))
     info['salário'] = float(input('Salário: R$'))
     info['aposentadoria'] = (info['contrato'] + 35) - datanasc
+print('\n')
 for k, v in info.items():
     print(f'{k} tem o valor {v}')
 

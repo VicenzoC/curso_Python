@@ -21,10 +21,11 @@ print('-'*40)
 for i, j in enumerate(jogadores):
     print(f'''{i:<5}{j["nome"]:15}{f"{j['gols']}":15}{j["total"]:<5}''')
 
-continua = ''
 while True:
-    cod = int(input('\nDigite o código do jogador para mais detalhes: '))
-    if cod < len(jogadores):
+    cod = int(input('\nDigite o código do jogador para mais detalhes (999 para sair): '))
+    if cod == 999:
+        break
+    elif cod < len(jogadores):
         print(f'\n-- LEVANTAMENTO DO JOGADOR {jogadores[cod]["nome"]} --')
         for i, p in enumerate(jogadores[cod]["gols"]):
             print(f'No jogo {i + 1} fez {p} gols')
